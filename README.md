@@ -13,7 +13,6 @@ An AI-powered chatbot designed to help users identify symptoms and get relevant 
 - [Training the Model](#training-the-model)
 - [Project Structure](#project-structure)
 - [Dependencies](#dependencies)
-- [Contact](#contact)
 
 ---
 
