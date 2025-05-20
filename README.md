@@ -91,16 +91,17 @@ The model will generate a new data.pth file. Make sure to update the model filen
 🗂 Project Structure
 
 Edit
-├── app.py                  # Main Flask application
-├── chat.py                 # Core logic for predictions
-├── train.py                # RNN model training script
-├── nltk_utils.py           # NLP preprocessing helpers
-├── intents.json            # Intent definitions and sample data
-├── data_rnn.pth            # Trained model
-├── static/                 # CSS and frontend files
-├── templates/              # HTML templates
-└── requirements.txt        # Python dependencies
-📦 Dependencies
+├── app.py                  # Main Flask application  <br>
+├── chat.py                 # Core logic for predictions  <br>
+├── train.py                # RNN model training script  <br>
+├── nltk_utils.py           # NLP preprocessing helpers  <br>
+├── intents.json            # Intent definitions and sample data  <br>
+├── data_rnn.pth            # Trained model  <br>
+├── static/                 # CSS and frontend files  <br>
+├── templates/              # HTML templates  <br>
+└── requirements.txt        # Python dependencies  <br>
+
+## 📦 Dependencies
 This project uses the following libraries:
 
 Python 3.x
