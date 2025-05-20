@@ -40,5 +40,87 @@ To run this chatbot locally, follow these steps:
 
 ```bash
 git clone https://github.com/<your-username>/symptom-checker-chatbot.git
-cd symptom-checker-chatbot
+cd symptom-checker-chatbot  ```
+
+2. Create a virtual environment and activate it:
+bash 
+Copy
+Edit
+python -m venv venv
+venv\Scripts\activate  # Windows
+# source venv/bin/activate  # Linux/Mac
+3. Install all required packages:
+bash
+Copy
+Edit
+pip install -r requirements.txt
+4. Download required files:
+Ensure the following files are placed in the root project directory:
+
+intents.json – Defines the chatbot's response patterns and labels.
+
+data_rnn.pth – Pre-trained RNN model file.
+
+medical_centers.json – Contains mock data of medical facilities.
+
+💻 Usage
+Once setup is complete, launch the app:
+
+bash
+Copy
+Edit
+python app.py
+Then open your browser and go to:
+
+arduino
+Copy
+Edit
+http://localhost:5000
+You can now interact with the chatbot through the web interface.
+
+🛠️ Training the Model
+To update or customize the chatbot’s knowledge base:
+
+Edit the intents.json file to add or modify symptoms, questions, and responses.
+
+Retrain the model using:
+
+bash
+Copy
+Edit
+python train.py
+The model will generate a new data.pth file. Make sure to update the model filename in chat.py under the FILE variable accordingly.
+
+🗂 Project Structure
+bash
+Copy
+Edit
+├── app.py                  # Main Flask application
+├── chat.py                 # Core logic for predictions
+├── train.py                # RNN model training script
+├── nltk_utils.py           # NLP preprocessing helpers
+├── intents.json            # Intent definitions and sample data
+├── data_rnn.pth            # Trained model
+├── static/                 # CSS and frontend files
+├── templates/              # HTML templates
+└── requirements.txt        # Python dependencies
+📦 Dependencies
+This project uses the following libraries:
+
+Python 3.x
+
+Flask
+
+PyTorch
+
+NLTK
+
+Geocoder
+
+Install all at once via:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
 
