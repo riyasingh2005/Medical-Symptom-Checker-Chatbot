@@ -88,18 +88,20 @@ python train.py
 ```
 The model will generate a new data.pth file. Make sure to update the model filename in chat.py under the FILE variable accordingly.
 
-🗂 Project Structure
-
+<details> <summary>📁 Project Structure</summary>
+graphql
+Copy
 Edit
-├── app.py                  # Main Flask application  <br>
-├── chat.py                 # Core logic for predictions  <br>
-├── train.py                # RNN model training script  <br>
-├── nltk_utils.py           # NLP preprocessing helpers  <br>
-├── intents.json            # Intent definitions and sample data  <br>
-├── data_rnn.pth            # Trained model  <br>
-├── static/                 # CSS and frontend files  <br>
-├── templates/              # HTML templates  <br>
-└── requirements.txt        # Python dependencies  <br>
+├── app.py           # Main Flask application  
+├── chat.py          # Core logic for predictions  
+├── train.py         # RNN model training script  
+├── nltk_utils.py    # NLP preprocessing helpers  
+├── intents.json     # Intent definitions and sample data  
+├── data_rnn.pth     # Trained model  
+├── static/          # CSS and frontend files  
+├── templates/       # HTML templates  
+└── requirements.txt # Python dependencies  
+</details>
 
 ## 📦 Dependencies
 This project uses the following libraries:
